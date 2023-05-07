@@ -3,12 +3,11 @@
 
 ## Descrição
 
-Este é um mini projeto em Flask para criar uma aplicação web que permite autenticação de um único usuário para acompanhamento e registro de logs via requisições HTTP. A aplicação foi desenvolvida para facilitar o gerenciamento de logs de diferentes sistemas, permitindo ao usuário monitorar e manter o histórico de eventos em tempo real. Esta versão do projeto permite apenas um usuário e um endereço MAC registrados, mas é escalável e pode ser adaptada para suportar múltiplos usuários, dashboards e outras funcionalidades, dependendo da criatividade e necessidades de cada usuário.
+Este é um mini projeto em Flask para criar uma aplicação web que permite autenticação de um único usuário para acompanhamento e registro de logs via requisições HTTP. A aplicação foi desenvolvida para facilitar o gerenciamento de logs de diferentes sistemas, permitindo ao usuário monitorar e manter o histórico de eventos em tempo real. Esta versão do projeto permite apenas um usuário, mas é escalável e pode ser adaptada para suportar múltiplos usuários, dashboards e outras funcionalidades, dependendo da criatividade e necessidades de cada usuário.
 
 ## Recursos
 
 -   Autenticação de um único usuário
--   Restrição de acesso por endereço MAC
 -   Acompanhamento de logs em tempo real
 -   Registro de logs via requisições HTTP
 -   Interface web simples e intuitiva
@@ -43,8 +42,7 @@ pip install -r requirements.txt`
 export PASSWORD=password
 export JWT_SECRET=jwt_secret
 export CLIENT_SECRET=client_secret
-export SECRET_KEY=secret_key
-export ALLOWED_MAC_ADDRESS=xx:xx:xx:xx:xx:xx` 
+export SECRET_KEY=secret_key` 
 
 Observação: É possível realizar alterações na aplicação Flask com um pouco de conhecimento técnico, no entanto, as regras mencionadas acima foram implementadas devido à necessidade de manter a segurança rígida em nossos servidores. Por favor, tenha cuidado ao fazer quaisquer alterações e certifique-se de que elas não comprometam a segurança da aplicação.
 
