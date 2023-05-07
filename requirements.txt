@@ -1,0 +1,6 @@
+flask
+getmac
+PyJWT
+cryptography
+flask_sqlalchemy
+python-dotenv
